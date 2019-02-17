@@ -1,0 +1,4 @@
+<div class="row tasks media text-muted pt-3">
+  <app-task-display class="col-12" *ngFor="let task of tasks" [task]="task" (taskDeleted)="onTaskDeleted($event)"></app-task-display>
+  <!-- <app-task-add class="col-12"></app-task-add> -->
+</div>
